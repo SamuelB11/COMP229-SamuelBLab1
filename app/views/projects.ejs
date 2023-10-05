@@ -1,13 +1,69 @@
 <%- include ('partials/header.ejs') %>
     <%- include ('partials/main_nav.ejs') %>
-
+        <link rel="stylesheet" href="/Content/style.css">
         <!--<img src="img/logo.png" alt="logo">-->
-
-        <main class="ontainer">
+        <style>
+            /* Center align text within the columns */
+            .col-md-8 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+    
+            /* Adjust image size and center it horizontally */
+            .project-img {
+                width: 100%; /* Image occupies the entire column width */
+                max-width: 400px; /* Limit image width for larger screens */
+                margin: 0 auto; /* Center align the image horizontally */
+            }
+        </style>
+        <main class="container">
             <div class="jumbotron">
 
                 <h1>Welcome to <%= title %> Page</h1>
-            </div>
+                <div class="container">
+                    <h1 class="mt-4">My Projects</h1>
+            
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <img src="/img/Project1.png" class="project-img" alt="Project 1">
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Medrop</h3>
+                            <p><strong>Description:</strong> Medrop is a mobile application designed to streamline the delivery of essential medicines, much like popular food delivery apps. It provides a convenient and efficient way for users to order prescription medications and have them delivered to their doorstep. The app ensures timely and safe delivery of vital medications, making it a crucial tool in healthcare accessibility.</p>
+                            <p><strong>Role:</strong> In this project, I collaborated with a team during my Software Requirements Class. My role primarily involved gathering and analyzing software requirements, ensuring that the app met the needs of both patients and healthcare providers. I contributed to the development of user stories, use cases, and functional requirements.</p>
+                        </div>
+                    </div>
+            
+                    <!-- Project 2 -->
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <img src="/img/Project2.png" class="project-img" alt="Project 2">
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Wardrobe App</h3>
+                            <p><strong>Description:</strong> The Wardrobe app simplifies the process of organizing and managing your clothing collection. It allows users to catalog their clothes, create outfits, and plan their wardrobe for various occasions. With features like mix-and-match suggestions and closet organization tools, it's a handy tool for fashion enthusiasts.</p>
+                            <p><strong>Role:</strong> I was the lead developer for the Wardrobe app project. My responsibilities included designing the app's architecture, implementing core features, and ensuring a user-friendly interface. I also worked on database integration to store clothing items and outfit data efficiently.</p>
+                        </div>
+                    </div>
+            
+                    <!-- Project 3 -->
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <img src="/img/Project3.png" class="project-img" alt="Project 3">
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Express Portfolio</h3>
+                            <p><strong>Description:</strong> Express Portfolio is a personal portfolio website built using Express.js and various Node.js modules. It showcases my skills, projects, and achievements as a software engineer. The website provides an overview of my professional journey, making it easy for potential employers and collaborators to learn about my work.</p>
+                            <p><strong>Role:</strong> As the sole developer of the Express Portfolio project, I designed and implemented the website from scratch using Express.js for the backend and integrated various Node.js modules for functionality such as contact forms and project galleries. I also designed the user interface and ensured responsive web design for a seamless viewing experience on different devices.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Include Bootstrap JS and jQuery from a CDN -->
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         </main>
 
         <%- include ('partials/bottom_nav.ejs') %>
