@@ -1,5 +1,17 @@
+body{
+    background-color: aliceblue;
+}
 .jumbotron {
     text-align: left;
-    max-width: 50%;
+    max-width: 60%;
     padding: 50px;
+    margin: 10px;
+}
+.side-text{
+    float: left;
+    width: 50%;
+}
+.side-pic{
+    float: left;
+    width: 50%;
 }
