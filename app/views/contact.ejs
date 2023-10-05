@@ -1,12 +1,55 @@
 <%- include ('partials/header.ejs') %>
     <%- include ('partials/main_nav.ejs') %>
-
+        <link rel="stylesheet" href="/Content/style.css">
         <!--<img src="img/logo.png" alt="logo">-->
 
-        <main class="ontainer">
+        <main class="container">
             <div class="jumbotron">
 
                 <h1>Welcome to <%= title %> Page</h1>
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Contact Information</h2>
+                            <address>
+                                <strong>Samuel Bustos Parada</strong><br>
+                                Toronto, On, Canada<br>
+                                Email: <a href="mailto:samuelbuspar3221@gmail.com">samuelbusp@gmail.com</a><br>
+                                Phone: (123) 456-7890
+                            </address>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- Contact Form -->
+                            <h2>Contact Us</h2>
+                            <form method="POST">
+                                <div class="mb-3">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactNumber" class="form-label">Contact Number</label>
+                                    <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            
+                
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
             </div>
         </main>
 
